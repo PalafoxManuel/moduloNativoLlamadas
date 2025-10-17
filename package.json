@@ -2,7 +2,7 @@
   "name": "modulonativollamadas",
   "version": "0.1.0",
   "description": "modulo nativo acceso a llamadas",
-  "main": "build/index.js",
+  "main": "index.js",
   "types": "build/index.d.ts",
   "scripts": {
     "build": "expo-module build",
@@ -13,7 +13,9 @@
     "prepublishOnly": "expo-module prepublishOnly",
     "expo-module": "expo-module",
     "open:ios": "xed example/ios",
-    "open:android": "open -a \"Android Studio\" example/android"
+    "open:android": "open -a \"Android Studio\" example/android",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
   },
   "keywords": [
     "react-native",
@@ -28,7 +30,11 @@
   "author": "PalafoxManuel <mapa_21@alu.uabcs.mx> (https://github.com/PalafoxManuel/moduloNativoLlamadas)",
   "license": "MIT",
   "homepage": "https://github.com/PalafoxManuel/moduloNativoLlamadas#readme",
-  "dependencies": {},
+  "dependencies": {
+    "expo": "~54.0.13",
+    "react": "19.1.0",
+    "react-native": "0.81.4"
+  },
   "devDependencies": {
     "@types/react": "~19.1.0",
     "expo-module-scripts": "^5.0.7",
